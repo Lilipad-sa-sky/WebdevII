@@ -1,0 +1,181 @@
+/* MAIN FOOTER CON */
+.footmaincon {
+  background: linear-gradient(#000000b3, #000000b3),
+    url("../../assets/collo.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: auto;
+  padding: 3rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* CONTAINER */
+.footercon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  width: 100%;
+  gap: 2rem;
+  color: #ddb892;
+}
+
+/* LOGO */
+.footerlogo h2 {
+  font-family: "Cinzel", serif;
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.footerlogo p {
+  font-size: 1.2rem;
+  font-family: "EB-Garamond", serif;
+  text-align: left;
+  margin: 0;
+  color: #ddb892;
+}
+
+/* TEXT SECTION FOR LIKNS */
+.footlink h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-family: "Cinzel", serif;
+  font-weight: 600;
+}
+
+.footlink ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footlink li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.footlink a {
+  text-decoration: none;
+  color: #ddb892;
+  transition: color 0.3s ease;
+  font-family: "EB-Garamond", serif;
+}
+
+.footlink a:hover {
+  color: #ffffff;
+}
+
+/* SOCIALS SEC W/ ICONS */
+.footsocial h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-family: "Cinzel", serif;
+  font-weight: 600;
+}
+
+.socialcon {
+  display: flex;
+  gap: 1rem;
+}
+
+.socialcon img {
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.socialcon img:hover {
+  transform: scale(1.1);
+}
+
+/* BOTTOM */
+.footbottom {
+  background: #000;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.footbottom p {
+  margin: 0;
+}
+/*PHONE*/
+/* RESPONSIVE FOOTER FOR MOBILE (MAX-WIDTH: 480PX) */
+@media (max-width: 480px) {
+  /* MAIN FOOTER CON */
+  .footmaincon {
+    padding: 2rem 1rem;
+    flex-direction: column; /* Ensures stacking */
+    align-items: center;
+  }
+
+  /* CONTAINER */
+  .footercon {
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;
+    text-align: center;
+    gap: 1rem; /* Adjust spacing between sections */
+  }
+
+  /* LOGO */
+  .footerlogo h2 {
+    font-size: 2.2rem; /* Scaled down for small screens */
+    text-align: center;
+  }
+
+  .footerlogo p {
+    font-size: 1rem;
+    text-align: center;
+    margin: 0 auto; /* Center text */
+  }
+
+  /* TEXT SECTION FOR LINKS */
+  .footlink h4 {
+    font-size: 1.3rem; /* Slightly smaller headings */
+    margin-bottom: 0.5rem;
+  }
+
+  .footlink ul {
+    padding: 0;
+  }
+
+  .footlink li {
+    margin-bottom: 0.4rem;
+    font-size: 0.9rem; /* Smaller font size for better fit */
+  }
+
+  .footlink a {
+    font-size: 0.9rem;
+  }
+
+  /* SOCIALS SECTION */
+  .footsocial h4 {
+    font-size: 1.3rem; /* Adjusted size for headings */
+    margin-bottom: 0.5rem;
+  }
+
+  .socialcon {
+    justify-content: center; /* Center icons */
+    gap: 0.8rem; /* Adjusted gap between icons */
+  }
+
+  .socialcon img {
+    width: 2rem; /* Reduced icon size */
+    height: 2rem;
+  }
+
+  /* FOOTER BOTTOM */
+  .footbottom {
+    font-size: 0.8rem; /* Scaled down text */
+    padding: 0.8rem 0; /* Adjusted padding */
+  }
+}
+
+/* THE END I SLEEP NOW ITS 3:43AM*/

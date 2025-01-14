@@ -1,0 +1,421 @@
+/* COVER PAGE */
+.dlmaincon {
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.dlbg {
+  width: 90%;
+  height: 35rem;
+  object-fit: cover;
+  display: flex;
+  margin: 2rem;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.dlbg img {
+  width: 100%;
+  object-fit: cover;
+  animation: monochrome 5s ease-in-out infinite,
+    zoomZoom 10s ease-in-out infinite;
+  transition: transform 0.3s, filter 0.3s;
+}
+
+@keyframes monochrome {
+  0% {
+    filter: grayscale(100%);
+  }
+  50% {
+    filter: grayscale(50%);
+  }
+  100% {
+    filter: grayscale(0%);
+  }
+}
+
+@keyframes zoomZoom {
+  0%,
+  100% {
+    transform: scale(2);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.dltext {
+  color: #ddb892;
+  font-family: "Cinzel", serif;
+}
+
+.dltext h2 {
+  font-weight: 500;
+  font-size: 15.8rem;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.dlsubtext {
+  color: #ddb892;
+  font-family: "Cinzel", serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  justify-content: space-between;
+  display: flex;
+  width: 90%;
+  margin: 0.5rem 0;
+}
+
+.dlsubtext #left {
+  text-align: left;
+}
+
+.dlsubtext #middle {
+  text-align: center;
+}
+
+.dlsubtext #right {
+  text-align: right;
+}
+
+.dlsubtext p {
+  flex: 1;
+}
+
+#bottomhr {
+  background-color: #ddb892;
+  border: none;
+  height: 2px;
+  width: 92.5%;
+  margin: 0 auto;
+}
+
+/*THE FIRST GRID*/
+.dltitle {
+  background-color: #000;
+  text-align: center;
+}
+
+.dltitle h1 {
+  font-size: 3rem;
+  color: #e7bc91;
+  font-family: "Cinzel", serif;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+  text-shadow: 3px 2px 1.5px #000;
+  padding: 2rem 0 0 0;
+}
+
+.dltitle h3 {
+  font-size: 1rem;
+  padding: 1rem 0 0 0;
+  color: #ffff;
+  font-family: "Cinzel", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  text-shadow: 3px 2px 1.5px #000;
+  padding: 0 0 2rem 0;
+}
+
+.maincon {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 80vh;
+  background: #000;
+  padding-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.cardcontainer {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  gap: 1rem;
+  max-width: 90%;
+  width: 100%;
+}
+
+.cardleft {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.cardright {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.dlgrid1img {
+  width: 100%;
+  height: auto;
+  display: block;
+  overflow: hidden;
+}
+
+.dlgrid1img img {
+  width: 100%;
+  height: auto;
+  animation: monogrid 5s ease-in-out infinite,
+    zoomgrid 10s ease-in-out infinite;
+  transition: transform 0.3s, filter 0.3s;
+}
+
+@keyframes monogrid {
+  0% {
+    filter: grayscale(100%);
+  }
+  50% {
+    filter: grayscale(50%);
+  }
+  100% {
+    filter: grayscale(0%);
+  }
+}
+
+@keyframes zoomgrid {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.cardleft .subtext h2,
+.cardright .subtext h2 {
+  font-size: 3rem;
+  color: #ddb892;
+  padding: 1rem 0 0.5rem 0;
+  font-family: "Cinzel", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.cardright .subtext p,
+.cardleft .subtext p {
+  color: #ccc;
+  font-family: "EB-Garamond", serif;
+  font-size: 1.2rem;
+}
+
+.cardmiddle img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/*pt.2*/
+.maincon2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  background: #000;
+  padding: 2rem 0;
+}
+
+.dlcard {
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.dlcard img {
+  width: 100%;
+  height: 25rem;
+  object-fit: cover;
+  filter: grayscale(2);
+}
+
+.dlcard img:hover {
+  filter: grayscale(0);
+  transition: 2s;
+  box-shadow: 2px 2px 15px #ddb892;
+}
+
+.dlcardtext {
+  color: #ddb892;
+  display: flex;
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.dlfits {
+  padding: 1.5rem 1.5rem 0 0;
+}
+
+.dlcardtext .dlfits h2 {
+  font-size: 6rem;
+  font-family: "Cinzel", serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 0.8;
+}
+
+.dlcardtext p {
+  font-size: 1.35rem;
+  color: #ccc;
+  padding: 1.5rem 0 0 0;
+  font-family: "EB-Garamond", serif;
+  text-align: justify;
+}
+
+/*PT. 3*/
+.maincon3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  background: #000;
+  padding: 2rem 0;
+}
+
+.dlcard3 {
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.dllifeimg img {
+  height: auto;
+  filter: grayscale(1);
+}
+
+.dllifeimg img:hover {
+  filter: grayscale(0);
+  transition: 2s;
+  box-shadow: 2px 2px 15px #ddb892;
+}
+
+.dllifetext h2 {
+  color: #ddb892;
+  font-weight: 500;
+  font-size: 7rem;
+  padding: 0 0 0 1.5rem;
+  text-transform: uppercase;
+  font-family: "Cinzel", serif;
+  line-height: 0.8;
+}
+
+.dllifetext p {
+  color: #ccc;
+  font-size: 1.23rem;
+  font-family: "EB-Garamond", serif;
+  text-align: justify;
+  padding: 1rem 0 0 1.5rem;
+}
+
+/*pt.4*/
+.dlleiimg img {
+  filter: grayscale(1);
+}
+
+.dlleiimg img:hover {
+  filter: grayscale(0);
+  transition: 2s;
+  box-shadow: 2px 2px 15px #ddb892;
+}
+
+.dlleitext h2 {
+  color: #ddb892;
+  font-weight: 500;
+  font-size: 4rem;
+  padding: 0 1.5rem 0 0;
+  text-transform: uppercase;
+  font-family: "Cinzel", serif;
+  line-height: 0.8;
+}
+
+.dlleitext p {
+  color: #ccc;
+  font-size: 1.23rem;
+  font-family: "EB-Garamond", serif;
+  text-align: justify;
+  padding: 1rem 1.5rem 0 0;
+}
+
+/*pt.5*/
+.dlromansimg {
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+  overflow: hidden;
+}
+
+.dlromansimg img {
+  width: 100%;
+  height: 25rem;
+  object-fit: cover;
+  animation: greyMatter 5s ease-in-out infinite, Zoomie 10s ease-in-out infinite;
+  transition: transform 0.3s, filter 0.3s;
+}
+
+/*MONOCHROME EFFECT*/
+@keyframes greyMatter {
+  0% {
+    filter: grayscale(100%);
+  }
+  50% {
+    filter: grayscale(50%);
+  }
+  100% {
+    filter: grayscale(0%);
+  }
+}
+
+/*ZOOM SFX*/
+@keyframes Zoomie {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.dllasttext {
+  color: #ddb892;
+  font-family: "Cinzel", serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  justify-content: space-between;
+  display: flex;
+  width: 90%;
+  margin: 0.5rem 0;
+}
+
+.dllasttext #dlleft {
+  text-align: left;
+}
+
+.dllasttext #dlright {
+  text-align: right;
+}
+
+.dllasttext p {
+  flex: 1;
+}
+
+.dlbottom {
+  margin: 0 0 2rem 0;
+}
+/* 11:56 PM THE END, IM TIRED */

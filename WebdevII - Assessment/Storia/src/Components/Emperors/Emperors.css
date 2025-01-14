@@ -1,0 +1,317 @@
+.empmaincon {
+  background: #000;
+}
+
+/* THE MAIN HEADER */
+.empheadcon {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  height: 110vh;
+  padding: 2rem 0;
+  background-color: #000;
+  position: relative;
+}
+
+.empheadtitle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -90%);
+  z-index: 0;
+  color: #ddb892;
+  font-size: 8rem;
+  text-align: center;
+}
+
+.empheadtitle h1 {
+  font-family: "Cinzel", serif;
+  font-weight: 500;
+}
+
+.empheadbanner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.empitem {
+  width: 19rem;
+  height: auto;
+  position: relative;
+  z-index: 0;
+  flex-shrink: 0;
+  margin: 0 -2rem;
+}
+
+.empitem img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.empitem:nth-child(2),
+.empitem:nth-child(5) {
+  z-index: 1;
+}
+
+.empitem:nth-child(3),
+.empitem:nth-child(4) {
+  z-index: 2;
+}
+
+.empheadbanner:hover .empitem {
+  filter: grayscale(1) blur(5px);
+  transition: 1s;
+}
+
+.empheadbanner:hover .empitem:hover {
+  filter: none;
+}
+
+/*SLIDERS CSS*/
+.empmaintitle h1 {
+  font-size: 3rem;
+  color: #e7bc91;
+  font-family: "Cinzel", serif;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+  text-shadow: 3px 2px 1.5px #000;
+  padding: 2rem 0;
+}
+
+.empbodycon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 76vh;
+  background: linear-gradient(
+      to top,
+      #00000042,
+      #ddb89255,
+      #ddb89255,
+      #00000042
+    ),
+    url(/src/assets/sample.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  image-resolution: from-image;
+  position: relative;
+  overflow: hidden;
+}
+
+.wrap {
+  max-width: 70rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel {
+  overflow: hidden;
+}
+
+.wrap .carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  gap: 1rem;
+}
+
+.carousel .empcard {
+  list-style: none;
+  background: #000;
+  height: 22rem;
+  width: 40rem;
+  border-radius: 1rem;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+}
+
+.empcard .empimg {
+  border-radius: 1rem;
+  width: 18.5rem;
+  height: 20.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.empcard .empimg img {
+  width: 18rem;
+  height: 20rem;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.empcard .empimg:hover {
+  background: #ddb892;
+  transition: 1s;
+}
+
+.empcard .empimg img:hover {
+  transition: 1s;
+  border: 2px solid #ddb892;
+}
+
+.emptext {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 1rem 1.5rem 1rem 0;
+}
+
+.emptext h2 {
+  font-size: 2rem;
+  color: #ddb892;
+  font-family: "Cinzel", serif;
+  font-weight: 500;
+  text-align: left;
+  text-shadow: 3px 2px 1.5px #000;
+}
+
+.emptext p {
+  font-size: 0.9rem;
+  color: #ccc;
+  line-height: 1.5;
+  text-align: justify;
+  font-family: "EB-Garamond", serif;
+}
+
+.scroll-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #000;
+  color: #ddb892;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.scroll-button.left {
+  left: 1rem;
+}
+
+.scroll-button.right {
+  right: 1rem;
+}
+
+.scroll-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/*THE ACHIEVMENST CARDS*/
+.empachheading h1 {
+  font-size: 3rem;
+  color: #e7bc91;
+  font-family: "Cinzel", serif;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+  text-shadow: 3px 2px 1.5px #000;
+  padding: 4rem 0 1rem 0;
+}
+
+.empachcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; 
+  gap: 2rem; 
+  padding: 2rem;
+  height: auto;
+}
+
+.empachcard {
+  position: relative;
+  width: 20rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  background-color: #1c1c1c;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  isolation: isolate;
+  overflow: hidden; 
+}
+
+.empachcard::before, .empachcard::after {
+  content: "";
+  position: absolute;
+}
+
+.empachcard::before {
+  content: "";
+  position: absolute;
+  width: 200%; 
+  height: 200%;
+  background: conic-gradient(
+    #ddb892 0deg,
+    transparent 60deg,
+    transparent 180deg,
+    #ddb892 180deg,
+    transparent 240deg
+  );
+  inset: -50%;
+  z-index: -2;
+  animation: border 8s linear infinite;
+}
+
+.empachcard:hover::before {
+  animation-play-state: paused;
+}
+
+@keyframes border {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.empachcard::after {
+  border-radius: calc();
+  content: "";
+  position: absolute;
+  inset: 0.25rem;
+  background-color: #000; 
+  border-radius: 1rem; 
+  z-index: -2;
+  transition: all 0.35s linear;
+}
+
+.empachcard:hover::after {
+  background-color: #1c1c1c; 
+}
+
+.empachtitle h2{
+  color: #ddb892;
+  font-family: "Cinzel", serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem; 
+  text-align: center;
+}
+
+.empachdetails p {
+  color: #ccc;
+  font-family: "EB-Garamond", serif;
+  font-size: 1.1rem;
+  line-height: 1.5; 
+  text-align: justify;
+}
+

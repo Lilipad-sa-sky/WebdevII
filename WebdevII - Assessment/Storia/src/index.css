@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/*HIDES THE SCROLLABR*/
+::-webkit-scrollbar {
+    display: none;
+}
+
+body{
+    background: #fff;
+    font-family: "Philosopher", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.container {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.btn a {
+    color: #ffffff;
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .btn a:hover {
+    color: #000;
+    border: 1px solid #dcab6b;
+    background-color: #dcab6b;
+    padding: 0.5rem 1.5rem;
+    transition: 0.5s;
+  }

@@ -1,0 +1,297 @@
+/*START*/
+.milimaincon {
+  margin: 0;
+  background: #000;
+}
+
+.milibanner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: url("../../assets/milibg.jpg") no-repeat center center/cover;
+  animation: fadeIn 2s ease-out, scrollScroll 15s linear infinite;
+}
+
+/*LEARNING ANIMATIONS WAS WORTH IT*/
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*THE SCROLLING ANIM*/
+@keyframes scrollScroll {
+  0% {
+    background-position: center top;
+  }
+  50% {
+    background-position: center center;
+  }
+  100% {
+    background-position: center bottom;
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0000008a;
+  z-index: 1;
+}
+
+.milicontent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+}
+
+.milititle {
+  color: #ddb892;
+}
+
+.milititle h2 {
+  font-size: 10rem;
+  font-family: "Cinzel", serif;
+  font-weight: 500;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.milititle p {
+  font-family: "EB-Garamond", serif;
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 2px #000;
+}
+
+/*SPQR PART*/
+.spqrcon {
+  width: 100%;
+  height: 90vh;
+  background: linear-gradient(
+      to bottom,
+      #000000,
+      #000000c3,
+      #0000007e,
+      #000000c3,
+      #000000
+    ),
+    url("../../assets/spqrbg.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spqrdescrip {
+  text-align: center;
+  color: #ddb892;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#spqrhr {
+  width: 50%;
+  border: 1px solid #ddb892;
+  margin: 20px auto;
+}
+
+.spqrdescrip h2 {
+  font-family: "Cinzel", serif;
+  font-weight: 500;
+  font-size: 5rem;
+}
+
+.spqrdescrip p {
+  font-family: "EB-Garamond", serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-shadow: 1px 1px 2px #000;
+  color: #ccc;
+}
+
+/*IMG CARDS WITH TEXT*/
+.legioncon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  width: 90%;
+  max-width: 70rem;
+  margin: 0 auto;
+  margin-top: 3rem;
+  background: #000;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px #ddb892;
+  color: #ddb892;
+}
+
+.leftmilicon {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.leftmilicon img {
+  max-width: 400px;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px #ddb892;
+  margin: 0 0 0 2rem;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.leftmilicon img:hover {
+  filter: grayscale(0);
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px #ddb892;
+}
+
+.rightmilicon {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0 4rem 0 2rem;
+}
+
+.rightmilicon h2 {
+  font-size: 2.5rem;
+  font-family: "Cinzel", serif;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.rightmilicon p,
+.rightmilicon ul {
+  font-family: "EB Garamond", serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.rightmilicon ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.rightmilicon li {
+  margin-bottom: 10px;
+}
+
+.leftcon {
+  text-align: center;
+  padding: 2rem 2rem 0 0;
+}
+
+.leftcon img {
+  max-width: 400px;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px #ddb892;
+  margin: 0 0 2rem 2rem;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.leftcon img:hover {
+  filter: grayscale(0);
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px #ddb892;
+}
+
+.rightcon {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0 0 0 2rem;
+}
+
+.rightcon h2 {
+  font-size: 2.5rem;
+  font-family: "Cinzel", serif;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.rightcon p {
+  font-family: "EB Garamond", serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+/*VENI VIDI VICI PART*/
+.bgmili {
+  background: linear-gradient(#000000a0, #000000a0),
+    url("../../assets/senate.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 4rem 0;
+  height: 20rem;
+  animation: bgScroll 10s linear infinite;
+}
+
+@keyframes bgScroll {
+  0% {
+    background-position: center top;
+  }
+  50% {
+    background-position: center bottom;
+  }
+  100% {
+    background-position: center top;
+  }
+}
+
+.militext {
+  color: #ddb892;
+  width: 70%;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.militext h2 {
+  font-family: "Cinzel", serif;
+  font-size: 5rem;
+  font-weight: 500;
+  text-align: center;
+  margin: 0;
+  animation: textOpacity 3s ease-in-out infinite;
+}
+
+@keyframes textOpacity {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.militext p {
+  font-family: "EB Garamond", serif;
+  font-size: 1rem;
+  text-align: right;
+  margin: 0;
+  width: 100%;
+  animation: textFade 3s ease-in-out infinite;
+}
+
+/*THE END*/

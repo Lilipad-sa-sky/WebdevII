@@ -1,0 +1,532 @@
+/*HOME PAGE*/
+.romemaincon {
+  background-color: #000;
+}
+
+.bg {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75)),
+    url("../../assets/Storia.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  image-resolution: from-image;
+}
+
+.header h1 {
+  color: #e7bc91;
+  font-family: "Cinzel", serif;
+  font-weight: 500;
+  font-style: normal;
+  text-align: left;
+  font-size: 5rem;
+  top: 25%;
+  width: 50%;
+  margin: 0 0 0 17rem;
+  position: absolute;
+  text-shadow: 3px 2px 1.5px #000;
+}
+
+.header h2 {
+  color: #e7bc91;
+  font-family: "Cinzel", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  top: 59%;
+  width: 36%;
+  position: absolute;
+  margin: 0 0 0 17rem;
+}
+
+.readmorebtn button {
+  position: absolute;
+  top: 79%;
+  width: 8rem;
+  left: 17rem;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #ddb892;
+  font-family: "Cinzel", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  background-color: #000;
+  padding: 0.5rem 1rem;
+  transition: all 0.5s ease;
+  border: none;
+}
+
+.readmorebtn button:hover {
+  color: #000;
+  border: 1px solid #dcab6b;
+  background-color: #ddb892;
+  font-weight: 500;
+  transform: scale(1.05);
+}
+
+/*EMPEROR SECTION*/
+.empgridcon {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: #000;
+}
+
+.empgridcon h2 {
+  color: #ddb892;
+  font-family: "Cinzel", serif;
+  font-weight: 500;
+  padding: 2rem 0;
+  font-size: 4rem;
+}
+
+.empgrid {
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.empgrid img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 1rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.empgrid img:hover {
+  border: #ddb892;
+  box-shadow: 1px 2px 10px #ddb892;
+}
+
+/* BTN CON */
+.empgridbtn {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.empgridbtn button {
+  font-family: "Cinzel", serif;
+  font-weight: 500;
+  background-color: #ddb892;
+  color: #000;
+  font-size: 1.2rem;
+  padding: 0.7rem 2rem;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.empgridbtn button:hover {
+  background-color: #b08968;
+  color: #ccc;
+  transform: scale(1);
+}
+
+/* QUOTE CSS */
+.romequote {
+  background: linear-gradient(#000000a0, #000000a0),
+    url("../../assets/romebg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 4rem 0;
+  height: 20rem;
+  animation: romebgScroll 10s linear infinite;
+}
+
+/*SIMPLE ANIMATIONS*/
+@keyframes romebgScroll {
+  0% {
+    background-position: center top;
+  }
+  50% {
+    background-position: center bottom;
+  }
+  100% {
+    background-position: center top;
+  }
+}
+
+.rometext {
+  color: #ddb892;
+  width: 70%;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.rometext h2 {
+  font-family: "Cinzel", serif;
+  font-size: 4rem;
+  font-weight: 500;
+  text-align: center;
+  margin: 0;
+  animation: textHide 3s ease-in-out infinite;
+}
+
+@keyframes textHide {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.rometext p {
+  font-family: "EB Garamond", serif;
+  font-size: 1rem;
+  text-align: right;
+  margin: 0;
+  width: 100%;
+  animation: textHide 3s ease-in-out infinite;
+}
+
+/*MYTH PART*/
+.romemythcon {
+  width: 100%;
+  height: 90vh;
+  background: linear-gradient(
+      to bottom,
+      #000000,
+      #000000c3,
+      #0000007e,
+      #000000c3,
+      #000000
+    ),
+    url("../../assets/spqrbg.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.romedescrip {
+  text-align: center;
+  color: #ddb892;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#romehr {
+  width: 50%;
+  border: 1px solid #ddb892;
+  margin: 20px auto;
+}
+
+.romedescrip h2 {
+  font-family: "Cinzel", serif;
+  font-weight: 500;
+  font-size: 5rem;
+}
+
+.romedescrip p {
+  font-family: "EB-Garamond", serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-shadow: 1px 1px 2px #000;
+  color: #ccc;
+  padding: 0 0 2rem 0;
+}
+
+.romedescrip button {
+  font-family: "Cinzel", serif;
+  font-weight: 500;
+  background-color: #ddb892;
+  color: #000;
+  font-size: 1.2rem;
+  padding: 0.7rem 2rem;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.romedescrip button:hover {
+  background-color: #b08968;
+  color: #ccc;
+  transform: scale(1);
+}
+
+/*ARCHITECTURE SECTION*/
+.archcolos {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 5%;
+  overflow: hidden;
+  background: linear-gradient(
+      to bottom,
+      #000000,
+      #000000c3,
+      #0000007e,
+      #000000c3,
+      #000000
+    ),
+    url("../../assets/colos.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.archdescrip {
+  position: relative;
+  z-index: 2;
+  text-align: left;
+  color: #fff;
+  width: 50%;
+  font-family: "EB-Garamond", serif;
+}
+
+.arcdescriphead {
+  margin-bottom: 1rem;
+}
+
+.arcdescriphead h2 {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #ddb892;
+  margin-bottom: 0.5rem;
+  font-family: "Cinzel", serif;
+}
+
+.arcdescriphead hr {
+  border: 0;
+  height: 2px;
+  background: #ddb892;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.archdescriptext p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #fff;
+  text-shadow: 1px 1px 5px #000;
+  padding: 1rem 0;
+}
+
+.archdescrip button {
+  font-family: "Cinzel", serif;
+  font-weight: 500;
+  background-color: #ddb892;
+  color: #000;
+  font-size: 1rem;
+  padding: 0.7rem 2rem;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.archdescrip button:hover {
+  background-color: #b08968;
+  color: #ccc;
+  transform: scale(1);
+}
+
+/*DAILY LIFE CSS*/
+.dlromecon {
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.romesubtext {
+  color: #ddb892;
+  font-family: "Cinzel", serif;
+  font-weight: 500;
+  font-size: 1rem;
+  justify-content: space-between;
+  display: flex;
+  width: 90%;
+  margin: 0.5rem 0;
+}
+
+.romesubtext #left {
+  text-align: left;
+}
+
+.romesubtext #middle {
+  text-align: center;
+}
+
+.romesubtext #right {
+  text-align: right;
+}
+
+.romesubtext p {
+  flex: 1;
+}
+
+#romehr {
+  background-color: #ddb892;
+  border: none;
+  height: 2px;
+  width: 92.5%;
+  margin: 0 auto;
+}
+/*PHONE*/
+@media (max-width: 480px) {
+  /* Header */
+  .header h1 {
+    font-size: 2rem;
+    width: 90%;
+    margin: 0 auto;
+    top: 23%;
+    text-align: center;
+  }
+
+  .header h2 {
+    font-size: 0.9rem;
+    width: 90%;
+    margin: 0 auto;
+    top: 35%;
+    text-align: center;
+  }
+
+  .readmorebtn button {
+    top: 60%;
+    width: 20%; 
+    margin: 1rem auto 0;
+    font-size: 0.5rem;
+    padding: 0.6rem 1rem;
+    display: block;
+  }
+
+  /* Emperor Section */
+  .empgridcon h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .empgrid {
+    grid-template-columns: 1fr; /* Single column for phones */
+    gap: 1rem;
+  }
+
+  .empgrid img {
+    height: 200px; /* Reduced height for better scaling */
+  }
+
+  /* Quote Section */
+  .romequote {
+    height: 12rem; /* Balanced height for quotes */
+  }
+
+  .rometext {
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .rometext h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .rometext p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  /* Myth Section */
+  .romemythcon {
+    height: auto;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .romedescrip h2 {
+    font-size: 2rem;
+  }
+
+  .romedescrip p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    text-align: justify;
+    padding: 0 1rem;
+  }
+
+  .romedescrip button {
+    font-size: 1rem;
+    padding: 0.7rem 1.5rem;
+    width: 60%; /* Centered and smaller button */
+    margin: 1rem auto 0;
+    display: block;
+  }
+
+  /* Architecture Section */
+  .archcolos {
+    height: auto;
+    padding: 2rem 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .archdescrip {
+    width: 90%;
+  }
+
+  .arcdescriphead h2 {
+    font-size: 2rem;
+  }
+
+  .archdescriptext p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .archdescrip button {
+    font-size: 1rem;
+    padding: 0.7rem 1.5rem;
+    width: 70%;
+    margin: 1rem auto 0;
+    display: block;
+  }
+
+  /* Daily Life Section */
+  .romesubtext {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .romesubtext p {
+    font-size: 0.85rem;
+    margin: 0.5rem 0;
+  }
+
+  #romehr {
+    width: 90%;
+    margin: 1rem auto;
+  }
+}
+
+/*THE END*/

@@ -1,0 +1,240 @@
+.mythoscon {
+  background: #000;
+  padding-top: 3rem;
+}
+
+.mythbanner {
+  width: 100%;
+  height: 198vh;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.mythbanner .mythtitle {
+  font-size: 6rem;
+  color: #ddb892;
+  font-family: "Cinzel", serif;
+  font-weight: 500;
+}
+
+.mythbanner .mythtitle h1 {
+  padding-top: 5rem;
+  z-index: 2;
+  text-shadow: 1px 10px 10px #ffffffb6;
+}
+
+.mythbanner .mythgridslider {
+  position: absolute;
+  width: 200px;
+  height: 250px;
+  top: 80%;
+  left: calc(50% - 100px);
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  animation: autoRun 50s linear infinite;
+  z-index: 2;
+}
+
+@keyframes autoRun {
+  from {
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+  }
+  to {
+    transform: perspective(1000px) rotateX(0deg) rotateY(360deg);
+  }
+}
+
+.mythbanner .mythgridslider .mythitem {
+  position: absolute;
+  inset: 0 0 0 0;
+  transform: rotateY(
+      calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
+    )
+    translateZ(550px);
+}
+
+.mythbanner .mythgridslider .mythitem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.mythbanner .mythstatcon {
+  position: absolute;
+  width: 200px;
+  height: 250px;
+  top: 20%;
+  left: calc(50% - 100px);
+  transform-style: preserve-3d;
+  transform: perspective(500);
+  z-index: 2;
+}
+
+.mythbanner .mythstat {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -33%);
+  width: 80rem;
+  height: 100rem;
+  align-items: center;
+  z-index: 1;
+}
+
+.mythbanner .mythstat img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mythbanner .mythstat::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #00000000, #000000);
+  z-index: 1;
+}
+
+.mythbanner .mythstattext {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 280%);
+  color: #fff;
+  font-size: 1.7rem;
+  z-index: 2;
+  width: 70rem;
+  text-align: center;
+  padding: 0.5rem 1rem;
+}
+
+.mythbanner .mythstattext p {
+  font-family: "Cinzel", serif;
+}
+
+.mythbanner .mythstattext #mythauthor {
+  font-size: 1.3rem;
+  padding: 2rem 0 0 0;
+}
+
+.mythcardcon {
+  width: 70%;
+  height: auto;
+  align-items: center;
+  margin: 0 auto;
+  padding: 2rem 0 6rem 0;
+  flex-direction: column;
+}
+
+.mythcardcon .mythcardleft,
+.mythcardcon .mythcardright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.imgleft,
+.imgright {
+  position: relative;
+  display: inline-block;
+  max-width: 25rem;
+  height: auto;
+  object-fit: fill;
+}
+
+.imgleft::before,
+.imgleft::after,
+.imgright::before,
+.imgright::after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  left: -5px;
+  top: -5px;
+  background: linear-gradient(45deg,
+    #7f5539,
+    #ddb892,
+    #582f0e,
+    #7f4f24,
+    #936639,
+    #ffe6a7,
+    #a98467,
+    #6f1d1b
+  );
+  background-size: 400%;
+  z-index: 1;
+  animation: animate 20s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.imgleft::after, 
+.imgright::after {
+  filter: blur(30px);
+  opacity: 0.99;
+}
+
+.imgleft img,
+.imgright img {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: auto;
+}
+
+.mythcardcon .imgleft img:hover,
+.mythcardcon .imgright img:hover {
+  transition: 2s;
+}
+
+.mythcardcon .textleft,
+.mythcardcon .textright {
+  color: #ddb892;
+}
+
+.mythcardcon .textleft h2 {
+  font-family: "Cinzel", serif;
+  margin-bottom: 0.5rem;
+  font-size: 5rem;
+  font-weight: 500;
+  text-align: left;
+}
+
+.mythcardcon .textright h2 {
+  font-family: "Cinzel", serif;
+  margin-bottom: 0.5rem;
+  font-size: 5rem;
+  font-weight: 500;
+  text-align: right;
+}
+
+.mythcardcon .textleft p {
+  font-family: "EB-Garamond";
+  font-size: 1.1rem;
+  text-align: left;
+  color: #ccc;
+}
+
+.mythcardcon .textright p {
+  font-family: "EB-Garamond";
+  font-size: 1.1rem;
+  text-align: right;
+  color: #ccc;
+}

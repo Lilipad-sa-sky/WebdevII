@@ -106,13 +106,13 @@ const Rome = () => {
             <h2>Mythology</h2>
             <hr id="romehr" />
             <p>
-              SPQR, an acronym for Senatus Populusque Romanus, translates to
-              "The Senate and the People of Rome." This phrase was the emblem of
-              the Roman Republic and later the Roman Empire, symbolizing the
-              unity of the Roman government and its citizens. It represented the
-              idea that the authority of Rome came from both the Senate (the
-              ruling body) and the Roman people (the citizens), underlining the
-              republic's political structure and its principles.
+              Ancient Roman mythology was a rich blend of indigenous beliefs and borrowed elements from Greek mythology, 
+              featuring a pantheon of gods like Jupiter, Mars, Venus, and Minerva, who governed various aspects of 
+              life and nature. Myths often reflected Roman values such as duty, loyalty, and military strength, 
+              with stories of legendary heroes like Aeneas symbolizing Rome's divine origins and destiny. Roman mythology's 
+              impact endures today through literature, art, architecture, and language. 
+              Concepts from Roman myths influence modern storytelling, while Roman gods and symbols, like the fasces and the eagle, 
+              remain embedded in political and cultural iconography worldwide.
             </p>
             <button>
               <Link

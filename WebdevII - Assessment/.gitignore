@@ -1,0 +1,16 @@
+# Node.js
+**/node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Vite build outputs
+**/dist/
+
+# Environment files
+**/.env
+**/.env.local
+**/.env.production
+**/.env.development
